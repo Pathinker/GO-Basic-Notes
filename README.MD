@@ -62,3 +62,13 @@ go run {go-file}
 ```
 go build -o {go-output-executable.o go-file.go}
 ```
+
+## $${\color{royalblue}Package \space Management \space}$$
+
+<p align="justify">  
+Working with packages in Go requires naming all the files with the same package. To import other libraries, it is necessary to specify the GitHub repository path. Once this is done, a go.mod file is created containing the Go version and the desired functions.
+</p>
+
+'''
+go get {github-address-directory}
+'''
