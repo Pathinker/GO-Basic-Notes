@@ -91,7 +91,7 @@ var number = 0
 number := 0
 ```
 
-[>!Note]
+> [!NOTE]
 > The operator ":=" is special for the Go language and is used to declare the implicit type, there is actually a curious way to use it for example encapsulating functions from libraries inside a dynamic data type and then use it as a regular function similar to a macro declared as a header in other languages.
 
 ## $${\color{royalblue}\space Conditions \space (Syntax)}$$
@@ -108,7 +108,7 @@ if random := rand.IntN(10); random > 5
 for l := range 1
 ```
 
-# $${\color{royalblue}\space Datatypes \space (Dynamic \space Arrays \space and \space Maps)}$$
+## $${\color{royalblue}\space Datatypes \space (Dynamic \space Arrays \space and \space Maps)}$$
 
 <p align="justify">  
 The use of dynamic arrays or maps requires the make function standard arrays have noticeable interesting ways to be declared Go can infer the size of an array with [...] declaration Since variables in Go are not objects like Python the assignment of new memory allocations is not part of a method or function itself, it is needed to make a new assignment.
@@ -118,7 +118,7 @@ The use of dynamic arrays or maps requires the make function standard arrays hav
 dinamic_vector_python = append(dinamic_vector_python, i) 
 ```
 
-# $${\color{royalblue}\space Function \space Structure}$$
+## $${\color{royalblue}\space Function \space Structure}$$
 
 <p align="justify">  
 Functions can return multiple data types at the same time, making this a relevant feature due to the limitations from other languages and the need of using arrays or tuples to get the exact behaviour, the arguments do not need to be specified individually if all match the same data type.
@@ -132,7 +132,7 @@ func overload(n ... int)int
 func overload(a, b, c int)int int int
 ```
 
-# $${\color{royalblue}\space Pointers}$$
+## $${\color{royalblue}\space Pointers}$$
 
 <p align="justify">  
 Memory management can be used to solve memory addressing.
@@ -146,13 +146,13 @@ ptx := &array[3]
 *ptx = 0
 ```
 
-# $${\color{royalblue}\space ASCII \space and \space Unicode}$$
+## $${\color{royalblue}\space ASCII \space and \space Unicode}$$
 
 <p align="justify">  
 ASCII code is extended with the use of runes accepting the Unicode/UTF-8 standard for string manipulation.
 </p>
 
-# $${\color{royalblue}\space Concurrency}$$
+## $${\color{royalblue}\space Concurrency}$$
 
 <p align="justify">  
 Go routines are a lightweight thread employed in the same memory address of the current thread, it is a feature intended in Go to follow its philosophy "Do not communicate by sharing memory; instead, share memory by communicating." This resembles the tool called channels to extract information and reduce the use of more complex tools and methodologies to avoid deadlocks and race conditions, channels hold the execution and wait until the Go routine has finished.
@@ -178,8 +178,7 @@ func counter(ch chan bool){
 
 ```
 go counter(ch)
-
 ```
 
-[>!Tip]
+> [!TIP]
 > Timeouts and custom error messages with panic are used to manage workflow between Go routines.
